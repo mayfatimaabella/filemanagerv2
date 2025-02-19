@@ -25,3 +25,24 @@
 #container a {
   text-decoration: none;
 }
+
+.ion-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.custom-button {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.button-icon {
+  width: 50%;
+  height: 50%;
+}

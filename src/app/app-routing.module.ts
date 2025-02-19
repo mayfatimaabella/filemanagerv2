@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'open-file',
+    loadChildren: () => import('./open-file/open-file.module').then( m => m.OpenFilePageModule)
+  },
 ];
 
 @NgModule({
