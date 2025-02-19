@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>view files</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let file of fileList" (click)="openActionSheet(file)">
+      {{ file }}
+    </ion-item>
+  </ion-list>
+</ion-content>

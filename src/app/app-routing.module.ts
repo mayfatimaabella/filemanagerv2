@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'open-file',
     loadChildren: () => import('./open-file/open-file.module').then( m => m.OpenFilePageModule)
+  },  {
+    path: 'view-files',
+    loadChildren: () => import('./view-files/view-files.module').then( m => m.ViewFilesPageModule)
   },
+
 ];
 
 @NgModule({

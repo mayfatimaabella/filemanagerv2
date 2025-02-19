@@ -9,4 +9,12 @@
     <ion-label position="floating">File Name</ion-label>
     <ion-input [(ngModel)]="fileName"></ion-input>
   </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">File Content</ion-label>
+    <ion-textarea [(ngModel)]="fileContent"></ion-textarea>
+    </ion-item>
+
+    <ion-button expand="full" (click)="createFile()" *ngIf="!isEditing">Save</ion-button>
+    <ion-button expand="full" (click)="updateFile()" *ngIf="isEditing">Update</ion-button>
 </ion-content>
